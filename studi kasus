@@ -1,0 +1,93 @@
+1. # Studi Kasus AND: Pinjam Laptop Lab
+
+kartu_mahasiswa = True
+surat_izin = False
+
+if kartu_mahasiswa and surat_izin:
+    print("Laptop boleh dipinjam.")
+else:
+    print("Laptop tidak boleh dipinjam.")
+# Keluaran: Laptop tidak boleh dipinjam.
+
+
+2. # Studi Kasus AND: Cetak Dokumen
+
+printer_menyala = True
+kertas_tersedia = True
+
+if printer_menyala and kertas_tersedia:
+    print("Dokumen dicetak.")
+else:
+    print("Dokumen belum bisa dicetak.")
+# Keluaran: Dokumen dicetak.
+
+3. # Studi Kasus AND: Praktikum Lab
+
+memakai_jas_lab = False
+sudah_absen = True
+
+if memakai_jas_lab and sudah_absen:
+    print("Silakan mulai praktikum.")
+else:
+    print("Praktikum belum bisa dimulai.")
+# Keluaran: Praktikum belum bisa dimulai.
+
+
+4. # Studi Kasus OR: Diskon Tiket Bioskop
+
+pelajar = False
+lansia = True
+
+if pelajar or lansia:
+    print("Dapat diskon tiket.")
+else:
+    print("Harga tiket normal.")
+# Keluaran: Dapat diskon tiket.
+
+
+5. # Studi Kasus OR: Alarm Kebakaran
+
+asap_terdeteksi = True
+suhu_tinggi = False
+
+if asap_terdeteksi or suhu_tinggi:
+    print("Alarm kebakaran berbunyi.")
+else:
+    print("Kondisi aman.")
+# Keluaran: Alarm kebakaran berbunyi.
+
+
+6. # Studi Kasus XOR: Pilihan Pengiriman
+
+kirim_kilat = True
+kirim_reguler = True
+
+if kirim_kilat ^ kirim_reguler:
+    print("Pengiriman dipilih.")
+else:
+    print("Pilih satu jenis pengiriman.")
+# Keluaran: Pilih satu jenis pengiriman.
+
+
+7.# Studi Kasus XOR: Bahasa Aplikasi
+
+bahasa_indonesia = False
+bahasa_inggris = True
+
+if bahasa_indonesia ^ bahasa_inggris:
+    print("Bahasa diterapkan.")
+else:
+    print("Pilih tepat satu bahasa.")
+# Keluaran: Bahasa diterapkan.
+
+
+8.# Studi Kasus XOR: Menu Sarapan
+
+pilih_roti = False
+pilih_bubur = False
+
+if pilih_roti ^ pilih_bubur:
+    print("Pesanan sarapan dicatat.")
+else:
+    print("Pilih roti atau bubur, tidak keduanya.")
+# Keluaran: Pilih roti atau bubur, tidak keduanya. 
