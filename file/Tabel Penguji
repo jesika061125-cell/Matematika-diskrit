@@ -1,0 +1,100 @@
+## 1. Tabel Pengujian AND: Pinjam Laptop Lab
+
+Kondisi: `kartu_mahasiswa = True` dan `surat_izin = False`.
+
+| No. | Kartu Mahasiswa | Surat Izin | Hasil AND | Output yang Diharapkan       | Status   |
+| --- | --------------- | ---------- | --------- | ---------------------------- | -------- |
+| 1   | True            | True       | True      | Laptop boleh dipinjam.       | Berhasil |
+| 2   | True            | False      | False     | Laptop tidak boleh dipinjam. | Berhasil |
+| 3   | False           | True       | False     | Laptop tidak boleh dipinjam. | Berhasil |
+| 4   | False           | False      | False     | Laptop tidak boleh dipinjam. | Berhasil |
+
+## 2. Tabel Pengujian AND: Cetak Dokumen
+
+Kondisi awal: `printer_menyala = True` dan `kertas_tersedia = True`.
+
+| No. | Printer Menyala | Kertas Tersedia | Hasil AND | Output yang Diharapkan      | Status   |
+| --- | --------------- | --------------- | --------- | --------------------------- | -------- |
+| 1   | True            | True            | True      | Dokumen dicetak.            | Berhasil |
+| 2   | True            | False           | False     | Dokumen belum bisa dicetak. | Berhasil |
+| 3   | False           | True            | False     | Dokumen belum bisa dicetak. | Berhasil |
+| 4   | False           | False           | False     | Dokumen belum bisa dicetak. | Berhasil |
+
+## 3. Tabel Pengujian AND: Praktikum Lab
+
+Kondisi awal: `memakai_jas_lab = False` dan `sudah_absen = True`.
+
+| No. | Memakai Jas Lab | Sudah Absen | Hasil AND | Output yang Diharapkan        | Status   |
+| --- | --------------- | ----------- | --------- | ----------------------------- | -------- |
+| 1   | True            | True        | True      | Silakan mulai praktikum.      | Berhasil |
+| 2   | True            | False       | False     | Praktikum belum bisa dimulai. | Berhasil |
+| 3   | False           | True        | False     | Praktikum belum bisa dimulai. | Berhasil |
+| 4   | False           | False       | False     | Praktikum belum bisa dimulai. | Berhasil |
+
+## 4. Tabel Pengujian OR: Diskon Tiket Bioskop
+
+Kondisi awal: `pelajar = False` dan `lansia = True`.
+
+| No. | Pelajar | Lansia | Hasil OR | Output yang Diharapkan | Status   |
+| --- | ------- | ------ | -------- | ---------------------- | -------- |
+| 1   | True    | True   | True     | Dapat diskon tiket.    | Berhasil |
+| 2   | True    | False  | True     | Dapat diskon tiket.    | Berhasil |
+| 3   | False   | True   | True     | Dapat diskon tiket.    | Berhasil |
+| 4   | False   | False  | False    | Harga tiket normal.    | Berhasil |
+
+## 5. Tabel Pengujian OR: Alarm Kebakaran
+
+Kondisi awal: `asap_terdeteksi = True` dan `suhu_tinggi = False`.
+
+| No. | Asap Terdeteksi | Suhu Tinggi | Hasil OR | Output yang Diharapkan    | Status   |
+| --- | --------------- | ----------- | -------- | ------------------------- | -------- |
+| 1   | True            | True        | True     | Alarm kebakaran berbunyi. | Berhasil |
+| 2   | True            | False       | True     | Alarm kebakaran berbunyi. | Berhasil |
+| 3   | False           | True        | True     | Alarm kebakaran berbunyi. | Berhasil |
+| 4   | False           | False       | False    | Kondisi aman.             | Berhasil |
+
+## 6. Tabel Pengujian XOR: Pilihan Pengiriman
+
+Kondisi awal: `kirim_kilat = True` dan `kirim_reguler = True`.
+
+| No. | Kirim Kilat | Kirim Reguler | Hasil XOR (`^`) | Output yang Diharapkan       | Status   |
+| --- | ----------- | ------------- | --------------- | ---------------------------- | -------- |
+| 1   | True        | True          | False           | Pilih satu jenis pengiriman. | Berhasil |
+| 2   | True        | False         | True            | Pengiriman dipilih.          | Berhasil |
+| 3   | False       | True          | True            | Pengiriman dipilih.          | Berhasil |
+| 4   | False       | False         | False           | Pilih satu jenis pengiriman. | Berhasil |
+
+## 7. Tabel Pengujian XOR: Bahasa Aplikasi
+
+Kondisi awal: `bahasa_indonesia = False` dan `bahasa_inggris = True`.
+
+| No. | Bahasa Indonesia | Bahasa Inggris | Hasil XOR (`^`) | Output yang Diharapkan   | Status   |
+| --- | ---------------- | -------------- | --------------- | ------------------------ | -------- |
+| 1   | True             | True           | False           | Pilih tepat satu bahasa. | Berhasil |
+| 2   | True             | False          | True            | Bahasa diterapkan.       | Berhasil |
+| 3   | False            | True           | True            | Bahasa diterapkan.       | Berhasil |
+| 4   | False            | False          | False           | Pilih tepat satu bahasa. | Berhasil |
+
+## 8. Tabel Pengujian XOR: Menu Sarapan
+
+Kondisi awal: `pilih_roti = False` dan `pilih_bubur = False`.
+
+| No. | Pilih Roti | Pilih Bubur | Hasil XOR (`^`) | Output yang Diharapkan                 | Status   |
+| --- | ---------- | ----------- | --------------- | -------------------------------------- | -------- |
+| 1   | True       | True        | False           | Pilih roti atau bubur, tidak keduanya. | Berhasil |
+| 2   | True       | False       | True            | Pesanan sarapan dicatat.               | Berhasil |
+| 3   | False      | True        | True            | Pesanan sarapan dicatat.               | Berhasil |
+| 4   | False      | False       | False           | Pilih roti atau bubur, tidak keduanya. | Berhasil |
+
+## Ringkasan hasil pengujian 8 program
+
+| No. | Nama Program         | Operator | Kondisi Awal | Hasil yang Diharapkan                  |
+| --- | -------------------- | -------- | ------------ | -------------------------------------- |
+| 1   | Pinjam Laptop Lab    | AND      | True, False  | Laptop tidak boleh dipinjam.           |
+| 2   | Cetak Dokumen        | AND      | True, True   | Dokumen dicetak.                       |
+| 3   | Praktikum Lab        | AND      | False, True  | Praktikum belum bisa dimulai.          |
+| 4   | Diskon Tiket Bioskop | OR       | False, True  | Dapat diskon tiket.                    |
+| 5   | Alarm Kebakaran      | OR       | True, False  | Alarm kebakaran berbunyi.              |
+| 6   | Pilihan Pengiriman   | XOR      | True, True   | Pilih satu jenis pengiriman.           |
+| 7   | Bahasa Aplikasi      | XOR      | False, True  | Bahasa diterapkan.                     |
+| 8   | Menu Sarapan         | XOR      | False, False | Pilih roti atau bubur, tidak keduanya. |
